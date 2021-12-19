@@ -1,0 +1,133 @@
+------Customer Table Information--------
+
+(1, 'Kelby', 'Matterdace', datetime.date(1974, 5, 22), 'V435899293', 'kmatterdace0@oracle.com', '181-441-7828') 
+
+(2, 'Orion', 'De Hooge', datetime.date(1992, 8, 7), 'Z140530509', 'odehooge1@quantcast.com', '948-294-5458') 
+
+(3, 'Sheena', 'Macias', datetime.date(1981, 3, 10), 'W045654959', 'smacias3@amazonaws.com', None) 
+
+(4, 'Irving', 'Packe', datetime.date(1994, 12, 19), 'O232196823', 'ipacke4@cbc.ca', '157-815-8064') 
+
+(5, 'Kass', 'Humphris', datetime.date(1993, 12, 16), 'G055017319', 'khumphris5@xrea.com', '510-624-4189') 
+
+------Equipment Table Information------------
+
+(1, 'Garmin GPS', 1, 5)
+
+(2, 'Tomtom GPS', 1, 6)
+
+(3, 'Tomtom GPS', 1, 7)
+
+(4, 'Infant Child Seat', 3, 1)
+
+(5, 'Child Seat', 3, 7)
+
+(6, 'Booster Seat', 3, 1)
+
+(7, 'Sirius XM Satellite Radio', 2, 5)
+
+(8, 'Sirius XM Satellite Radio', 2, 6)
+
+-----Equipment_type Table Information---------
+
+(1, 'GPS', Decimal('14.99'))
+
+(2, 'Satellite Radio', Decimal('7.99'))
+
+(3, 'Child Safety Seats', Decimal('13.99'))
+
+-----fuel_option Table Information---------
+
+(1, 'Pre-pay', 'Customer pays in advance for a full tank of fuel, so they can return back with an empty tank of fuel, without the hassle of last minute stops and purchasing the fuel.')
+
+(2, 'Self-Service', 'Customer will get full tank of fuel with the rental car and must return it back with the full tank of fuel.')
+
+(3, 'Market', 'Customer gets the car with full tank of fuel but pays for fuel at market price based on fuel usage.  ')
+
+-----insurance Table Information---------
+
+(1, 'Cover The Car (LDW)', Decimal('30.99'))
+
+(2, 'Cover Myself (PAI)', Decimal('7.00'))
+
+(3, 'Cover My Belongings (PEP)', Decimal('2.95'))
+
+(4, 'Cover My Liability (ALI)', Decimal('16.50'))
+
+-----location Table Information---------
+
+(1, '1001 Henderson St', 'Fort Worth', 'TX', 76102)
+
+(2, '300 Reunion Blvd', 'Dallas', 'TX', 75207)
+
+(3, '5911 Blair Rd NW', 'Washington', 'DC', 20011)
+
+(4, '9217 Airport Blvd', 'Los Angeles', 'CA', 90045)
+
+(5, '310 E 64th St', 'New York', 'NY', 10021)
+
+(6, '1011 Pike St', 'Seattle', 'WA', 98101)
+
+(7, '5150 W 55th St', 'Chicago', 'IL', 60638)
+
+-----rental Table Information---------
+
+(1, datetime.date(2018, 7, 14), datetime.date(2018, 7, 23), 1, 2, 1, 3, 5)
+
+(2, datetime.date(2018, 7, 10), datetime.date(2018, 7, 12), 2, 1, 2, 1, 2)
+
+(3, datetime.date(2018, 6, 30), datetime.date(2018, 7, 20), 3, 1, 3, 4, 6)
+
+(4, datetime.date(2018, 6, 10), datetime.date(2018, 7, 2), 4, 4, 2, 2, 7)
+
+(5, datetime.date(2018, 7, 14), datetime.date(2018, 7, 27), 5, 3, 3, 5, 3)
+
+-----rental_has_equipment_type Table Information---------
+
+(1, 1)
+
+(3, 1)
+
+(4, 1)
+
+(1, 2)
+
+(3, 2)
+
+(4, 3)
+
+-----rental_has_insurance Table Information---------
+
+(1, 1)
+
+(2, 1)
+
+(3, 1)
+
+(4, 1)
+
+(5, 1)
+
+(1, 2)
+
+(4, 2)
+
+(1, 3)
+
+(4, 3)
+
+(2, 4)
+
+(4, 4)
+
+(8, 2, datetime.date(2018, 6, 15), datetime.date(2018, 7, 20))
+
+----vehicle_type Table Information---------
+
+(1, 'Economy', Decimal('26.77'))
+
+(2, 'Intermediate', Decimal('29.45'))
+
+(3, 'Standard', Decimal('34.81'))
+
+(4, 'Economy SUV', Decimal('37.48'))
